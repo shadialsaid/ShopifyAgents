@@ -13,14 +13,17 @@ Guidance for AI assistants (and humans) working in this repository.
 ## Project overview
 
 - **Name:** ShopifyAgents
-- **Purpose:** A suite of autonomous AI agents for Shopify merchants. Two
+- **Purpose:** A suite of autonomous AI agents for Shopify merchants. Three
   agents are specified so far (see `docs/`):
   - **Content Agent** — generates/optimizes/maintains store content (product
     descriptions, collection & landing copy, blog posts, SEO + GEO metadata).
   - **Marketing Agent** — plans/runs/optimizes lifecycle marketing across
     owned channels (email, SMS, and later WhatsApp/RCS/push).
-  The two agents are designed to share services (brand voice, asset library,
-  store connection, analytics). The tech stack is **not yet chosen**.
+  - **Data Agent** — unifies and analyzes store data (sales, inventory,
+    customers, marketing), forecasts, and turns insights into recommendations
+    and actions; acts as the orchestrator that routes work to the other agents.
+  The agents are designed to share services (brand voice, asset library, store
+  connection, unified data/analytics). The tech stack is **not yet chosen**.
 
 ## Current repository state
 
@@ -30,7 +33,8 @@ Guidance for AI assistants (and humans) working in this repository.
 ├── README.md   # placeholder ("# ShopifyAgents")
 └── docs/
     ├── content-agent-prd.md     # PRD: Content Agent (draft v0.1)
-    └── marketing-agent-prd.md   # PRD: Marketing Agent (draft v0.1)
+    ├── marketing-agent-prd.md   # PRD: Marketing Agent (draft v0.1)
+    └── data-agent-prd.md        # PRD: Data Agent (draft v0.1)
 ```
 
 That is the entire repository today — product docs only, no code yet. Start
