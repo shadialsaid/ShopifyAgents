@@ -2,32 +2,39 @@
 
 Guidance for AI assistants (and humans) working in this repository.
 
-> **Status: bootstrap / empty repository.** As of the last update, this repo
-> contains only this file and a placeholder `README.md`. No application code,
-> dependencies, build tooling, or tests exist yet. Sections below marked
-> _(to be documented)_ are intentional placeholders. **Whenever you add real
-> code, update the corresponding section here in the same change** so this
-> file always reflects the true state of the codebase. Do not invent structure
-> or commands that don't exist.
+> **Status: planning / pre-code.** As of the last update, this repo contains
+> product documentation (`docs/`) but no application code, dependencies, build
+> tooling, or tests yet. Sections below marked _(to be documented)_ are
+> intentional placeholders. **Whenever you add real code, update the
+> corresponding section here in the same change** so this file always reflects
+> the true state of the codebase. Do not invent structure or commands that
+> don't exist.
 
 ## Project overview
 
 - **Name:** ShopifyAgents
-- **Inferred purpose:** Tooling and/or AI agents that interact with Shopify
-  (e.g. stores, products, orders, the Shopify Admin/Storefront APIs). This is
-  inferred from the repository name only and has **not** been confirmed by code
-  or documentation. Confirm the actual scope before relying on it, and correct
-  this line once the direction is settled.
+- **Purpose:** A suite of autonomous AI agents for Shopify merchants. Two
+  agents are specified so far (see `docs/`):
+  - **Content Agent** — generates/optimizes/maintains store content (product
+    descriptions, collection & landing copy, blog posts, SEO + GEO metadata).
+  - **Marketing Agent** — plans/runs/optimizes lifecycle marketing across
+    owned channels (email, SMS, and later WhatsApp/RCS/push).
+  The two agents are designed to share services (brand voice, asset library,
+  store connection, analytics). The tech stack is **not yet chosen**.
 
 ## Current repository state
 
 ```
 .
 ├── CLAUDE.md   # this file
-└── README.md   # placeholder ("# ShopifyAgents")
+├── README.md   # placeholder ("# ShopifyAgents")
+└── docs/
+    ├── content-agent-prd.md     # PRD: Content Agent (draft v0.1)
+    └── marketing-agent-prd.md   # PRD: Marketing Agent (draft v0.1)
 ```
 
-That is the entire repository today.
+That is the entire repository today — product docs only, no code yet. Start
+with the PRDs in `docs/` to understand intended scope before writing code.
 
 ## Tech stack
 
